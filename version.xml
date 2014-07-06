@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="Alpha">
+    <comment>The required code for checking versions!</comment>
+    <entry key="API Latest">pre1a|http://bit.ly/ViolentApiVersion/</entry>
+</properties>
