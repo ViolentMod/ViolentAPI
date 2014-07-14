@@ -1,0 +1,16 @@
+[
+{
+  "modid": "violentapi",
+  "name": "Violent API",
+  "description": "An API which adds a lot of utilities for mods.",
+  "version": "1.7.10",
+  "mcversion": "1.7.10",
+  "url": "https://github.com/ViolentMod/ViolentAPI/",
+  "updateUrl": "",
+  "authorList": ["ViolentNinjaD"],
+  "credits": "Thanks tutorial makers :)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
