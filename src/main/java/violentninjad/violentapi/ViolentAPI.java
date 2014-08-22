@@ -7,10 +7,9 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
+import violentninjad.violentapi.api.itemstacks.ItemStackHelper;
 import violentninjad.violentapi.proxy.IProxy;
 import violentninjad.violentapi.reference.Reference;
-import violentninjad.violentapi.utility.CraftingHelper;
 import violentninjad.violentapi.utility.LogHelper;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)
@@ -26,6 +25,7 @@ public class ViolentAPI {
     public void preInit(FMLPreInitializationEvent event) {
 
         LogHelper.info("ViolentAPI initialization has begun!");
+
 
     }
 

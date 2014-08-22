@@ -1,4 +1,4 @@
-package violentninjad.violentapi.utility;
+package violentninjad.violentapi.api;
 //Copyright ViolentNInjaD 2014
 
 import cpw.mods.fml.common.registry.GameRegistry;
