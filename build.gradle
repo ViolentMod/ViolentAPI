@@ -16,13 +16,15 @@ buildscript {
 }
 
 apply plugin: 'forge'
+apply plugin: 'maven-publish'
+apply plugin: 'maven'
 
 version = "1.7.10-01"
 group= "violentninjad.violentapi" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "ViolentAPI"
 
 minecraft {
-    version = "1.7.10-10.13.0.1180"
+    version = "1.7.10-10.13.0.1219"
     assetDir = "eclipse/assets"
 }
 
@@ -62,10 +64,24 @@ processResources
     }
 }
 
-ext.configFile = file "githubDetails.properties"
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "$buildDir/repo"
+			//url "C:\Development\MavenRepository\maven"
+        }
+    }
+}
 
-configFile.withReader {
-    def prop = new Properties()
-    prop.load(it)
-    project.ext.login = new ConfigSlurper().parse prop
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: 'file://C:/Development/MavenRepository/maven'
+        }
+    }
 }
